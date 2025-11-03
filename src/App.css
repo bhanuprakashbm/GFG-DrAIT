@@ -1,0 +1,80 @@
+/* Importing Poppins, Montserrat, Arvo, GreatVibes, Lobster, and Pacifico from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@font-face {
+  font-family: "Garet Heavy";
+  src: url("/fonts/Garet-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+       url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+/* Green grid pattern background */
+.primary {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.dark .primary{
+  background: transparent;
+}
+.gfg-dark-color{
+  background-color: #131417;
+}
+.dark .hero-section{
+  background: transparent;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 1rem; */
+}
+.toggle i{
+ border:none;
+ outline: none;
+ color:green;
+}
+.light-mode-icon {
+  background: url('/assets/lightmode.svg') no-repeat;
+  background-size: 100%;
+  width:2.2em;
+  height:2.2em;
+}
+
+/* Icon for dark mode */
+.dark-mode-icon{
+  background: url('/assets/darkmode.svg') no-repeat;
+  width:1.6em;
+  height:1.6em;
+  background-size: 100%;
+}
+
+img{
+  user-select: none;
+  pointer-events: none !important;
+  color:#080808;
+}
+.dsa-category-card{
+  outline: none !important;
+}
+.card-light-green-grad{
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+  background-repeat: repeat;
+}
+.dark .card-light-green-grad{
+  background: none;
+}
+.light-bg-wg{
+  background: #E6F0E9
+}
+
+
+

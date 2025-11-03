@@ -1,0 +1,36 @@
+/* POTD Page Styles */
+
+.otherpage1-content {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* Responsive font size for title */
+@media (max-width: 768px) {
+  .otherpage1-content h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .otherpage1-content h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Problem card hover effect */
+.otherpage1-content > div {
+  transition: all 0.3s ease;
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 10px 30px rgba(0, 255, 175, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}

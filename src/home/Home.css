@@ -1,0 +1,358 @@
+/*All Colors and gradients*/
+.green-grad{
+    background: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+    background-clip: text;
+    color: transparent;
+}
+.about-bg{
+  background: transparent;
+}
+.event-card{
+  background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%) ;
+}
+.team-member-card{
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%) ;
+}
+.section-showcase-card{
+  background: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%) ;
+}
+.dark .event-card,
+.dark .about-bg,
+.dark .no-grid-bg,
+.dark .team-member-card
+,.dark .section-showcase-card
+{
+  background: none;
+}
+
+
+
+/*Navbar-section*/
+.dark .nav-shadow{
+  background-color: #2a2b2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.gfg-bg {
+  background-color: #308d46 !important;
+}
+.gfg-color{
+  color:#308d46 !important;
+}
+.navbar .logo-text {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 850;
+}
+.heading {
+  line-height: 1.2;
+  font-family: "Garet Heavy",'Mona Sans','Poppins' !important;
+}
+.heading,
+.tag-line {
+  font-family: "Garet Heavy",'Mona Sans','Poppins' !important;
+}
+.lbr {
+  display: none;
+}
+.nav-link{
+  color:#1a5a1a;
+  color:#308d46;
+  font-size:1.08rem;
+  font-weight: bold;
+}
+.dark .nav-link,.dark .logo-text{
+  color:#5cf164 !important;
+}
+
+/* About section */
+
+/* Apply filter and drop-shadow-xl effects */
+.custom-shadow {
+  filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1));
+}
+
+/* Core Team section */
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1); /* Subtle initial shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+    transform: translateY(0);
+
+}
+.dark .team-member-card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+  transition: box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.dark .team-member-card:hover{
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.8) !important;
+}
+.team-member-card:hover{
+  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+  transform: translateY(-5px) !important;
+}
+.team-member-card h3,
+.team-member-card p {
+  text-align: center;
+}
+.team-member-card:hover .team-member-card p{
+  font-weight: bold !important;
+}
+
+/* Events section */
+.calendar-icon{
+  font-weight: bold !important;
+  font-size: 1.3rem !important;
+}
+.dark .event-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* FAQ's section */
+.dark .faq-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+.dark .home-events .primary{
+  background-color: transparent !important;
+}
+
+.dark .about-bg {
+  background-color: transparent !important;
+}
+
+/* Ensure content sections have transparent backgrounds */
+.dark .bg-home-dark {
+  background: transparent !important;
+}
+
+.bg-home-light {
+  background: transparent !important;
+}
+
+/*Contact-Us Section*/
+.icon-container {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+.Toastify__toast-container{
+  z-index:9999;
+}
+.icon-container i {
+  font-size: 1.5rem;
+}
+.contact-form input,
+textarea {
+  outline: none !important;
+  border: 1px solid green !important;
+}
+.icon-par{
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+.icon-par:hover{
+  background-color: hsl(160, 51%, 60%);
+  background-color: #5cf164;
+  font-weight: bold !important;
+}
+.border-white{
+  border-color: white !important;
+}
+
+
+
+
+/*Other utility CSS*/
+.green-gradient-text {
+  /* background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%); */
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+  /* background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+#typewriter {
+  background: linear-gradient(
+    111.4deg,
+    rgb(2, 255, 4) 18.4%,
+    rgb(0, 232, 237) 100.2%
+  );
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 204, 130) 11.2%,
+    rgb(58, 181, 46) 91.7%
+  ) ;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Garet Heavy" !important;
+}
+.geek {
+  font-family: "Garet Heavy" !important;
+}
+.heading {
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.image-container {
+  position: relative;
+}
+.image-container img {
+  display: block;
+}
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    height: 80vh !important;
+    overflow: hidden !important;
+  }
+  .navbar .logo {
+    height: 1.5rem;
+  }
+  .tag-line,
+  .heading {
+    font-size: 2.5rem;
+  }
+  .lbr {
+    display: block;
+  }
+  .hero-img-con img {
+    height: 16rem;
+    width: 16rem;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .soc-par {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading,
+  .tag-line {
+    font-size: 2.3rem;
+  }
+  .soc-par {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .heading,
+  .tag-line {
+    font-size: 2rem;
+  }
+  .soc-par {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .hero-img-con img {
+    height: 12rem;
+    width: 12rem;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .logo{
+    height:1.2rem !important;
+  }
+  .dark-mode-icon{
+    width:1.4em;
+    height:1.4em;
+  }
+}
+@media only screen and (max-width: 407px) {
+  .navbar .logo {
+    height: 1.15rem !important;
+  }
+  .navbar .logo-text {
+    font-size: 1.2rem;
+  }
+  .heading,
+  .tag-line {
+    font-size: 1.7rem;
+  }
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  .soc-par {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .soc-gpar {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+}
+@media (min-width: 450px) {
+  .contact-card {
+    border-radius: 1rem;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .navbar {
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+  }
+  .hamberger-menu{
+    padding:0rem !important;
+  }
+  .toggle-btn > * + *{
+    margin-left:0rem  !important;
+    margin-right:0rem  !important;
+  }
+  .logo{
+    height:0.75rem !important;
+  }
+  /*fixing the contact section*/
+  .address-section,.email-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons-section{
+    justify-content: center;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .navbar {
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+  }
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set dark teal background for all pages */
+html, body {
+  background: rgb(1, 23, 37) !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background: rgb(1, 23, 37) !important;
+  min-height: 100vh;
+}
+
+/* Global styles */
+@layer utilities {
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+  @media (max-width: 768px) {
+    .animate-marquee {
+      animation: marquee 20s linear infinite !important;
+    }
+  }
+}
+
+@layer utilities {
+  .dark .dark-green-grad {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+  }
+  .dark .text-green-grad{
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
+  }
+  .dark .lime-green-grad{
+    @apply bg-clip-text text-transparent !important;
+    background: linear-gradient(110.1deg, rgb(34, 126, 34) 0.9%, rgb(168, 251, 60) 0.3%);
+  }
+  .blog-light-bg{
+    background: radial-gradient(788px at 0.7% 3.4%, rgb(164, 231, 192) 0%, rgb(255, 255, 255) 90%);
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+  .dark .blog-light-bg{
+    background: none;
+  }
+  @screen md{
+    .no-grid-bg{
+      background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    }
+  }
+
+}
+
+
+
+/* Mona Sans font */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+       url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Mona Sans', 'Poppins', sans-serif !important;
+}
+
+

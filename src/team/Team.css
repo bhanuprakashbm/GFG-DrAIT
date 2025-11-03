@@ -1,0 +1,61 @@
+/* Team Flip Card Styles */
+.team-flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.team-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.team-flip-card:hover .team-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-flip-card-front,
+.team-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.team-flip-card-front {
+  background-color: #011725;
+  color: white;
+}
+
+.team-flip-card-back {
+  background: linear-gradient(135deg, #013a28 0%, #011725 100%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-flip-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-flip-card {
+    height: 280px;
+  }
+}

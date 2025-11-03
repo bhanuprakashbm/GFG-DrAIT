@@ -1,0 +1,181 @@
+/* Events Page Styles */
+
+/* Calendar Styles */
+.calendar-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.custom-calendar {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+}
+
+.custom-calendar .react-calendar__navigation {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.custom-calendar .react-calendar__navigation button:hover {
+  background: rgba(0, 255, 175, 0.3);
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  color: #00FFAF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.custom-calendar .react-calendar__tile {
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.custom-calendar .react-calendar__tile:hover {
+  background: rgba(0, 255, 175, 0.2);
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background: #00FFAF !important;
+  color: #011725 !important;
+  font-weight: bold;
+}
+
+.custom-calendar .react-calendar__tile--now {
+  background: rgba(0, 101, 165, 0.3);
+}
+
+/* Carousel Styles */
+.slick-slider {
+  position: relative;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 255, 175, 0.8) !important;
+  color: #011725 !important;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0;
+}
+
+.slick-arrow:hover {
+  background: rgba(0, 255, 175, 1) !important;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: #011725;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #00FFAF;
+}
+
+/* Event Card Styles */
+.event-card-large {
+  position: relative;
+  height: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.event-card-large:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 255, 175, 0.3);
+}
+
+.event-mini-card {
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.event-mini-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 255, 175, 0.3);
+}
+
+/* Filter Tabs */
+.filter-tab {
+  cursor: pointer;
+  border-radius: 100px;
+  border: 3px solid #00FFAF;
+  background-color: transparent;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  padding: 6px 18px;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.filter-tab:hover {
+  background-color: rgba(0, 255, 175, 0.2);
+}
+
+.filter-tab.active {
+  background-color: #00FFAF;
+  color: #002B46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+}

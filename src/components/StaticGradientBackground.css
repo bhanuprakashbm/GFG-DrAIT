@@ -1,0 +1,24 @@
+/* Static Gradient Background - No Animation */
+.static-gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgb(1, 23, 37);
+}
+
+.static-gradient-background.light {
+  background: rgb(1, 23, 37);
+}
+
+/* Dark mode - dark teal gradient matching the image */
+.dark .static-gradient-background {
+  background: linear-gradient(to bottom, #011725 0%, #013a28 50%, #011725 100%);
+}
+
+/* Light mode - lighter teal gradient */
+:root:not(.dark) .static-gradient-bg {
+  background: linear-gradient(to bottom, #e0f2f1 0%, #b2dfdb 50%, #80cbc4 100%);
+}

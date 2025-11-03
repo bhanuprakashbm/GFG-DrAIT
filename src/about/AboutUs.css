@@ -1,0 +1,46 @@
+/* About Us Page Styles */
+
+.otherpage1-content {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* Responsive font size for title */
+@media (max-width: 768px) {
+  .otherpage1-content h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .otherpage1-content h1 {
+    font-size: 32px !important;
+  }
+}
+
+/* Card hover effects */
+.otherpage1-content > div {
+  transition: all 0.3s ease;
+}
+
+.otherpage1-content > div:hover {
+  box-shadow: 0 20px 60px rgba(0, 255, 175, 0.2);
+}
+
+/* Scrollbar styling for overflow content */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #00FFAF;
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #00FFF2;
+}
